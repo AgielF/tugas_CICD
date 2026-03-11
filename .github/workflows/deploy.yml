@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to ECS
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@http://34.128.111.121/ << 'EOF'
+          ssh -o StrictHostKeyChecking=no ubuntu@34.128.111.121 << 'EOF'
             cd /var/www/mywebsite/tugas_CICD
             sudo git pull origin main
             # Restart Nginx or any other service if needed
